@@ -17,9 +17,13 @@
 #define PLAYER_3 3
 #define PLAYER_4 4
 
-struct connect4_board {
-  // TODO: Here define the necessary data attributes to play this game
-};
+typedef struct connect4_board {
+    int rows; // Number of rows in the game board
+    int columns; // Number of columns in the game board
+    int num_of_players; // Number of players in the game
+    int win_size; // Number of consecutive tokens needed to win
+    int** board; // Pointer to the game board array
+} connect4;
 
 typedef struct connect4_board connect4;
 
